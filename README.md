@@ -20,10 +20,6 @@ The generated website is written to `_build/html/`.
 
 ## Publish with GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` builds the MyST site and deploys it to GitHub Pages whenever `main` is updated. To enable it:
+This project is intended to live in a public GitHub repository. The workflow in `.github/workflows/pages.yml` builds the book for pull requests and deploys it to GitHub Pages whenever a change reaches `main`. You can also start a build manually from the **Actions** tab.
 
-1. Push this repository to GitHub.
-2. In the repository, open **Settings → Pages** and set the source to **GitHub Actions**.
-3. Push to `main` or run the workflow manually from the **Actions** tab.
-
-The workflow reads the Pages base path automatically, so links work both for a project site such as `owner.github.io/repository` and an owner site such as `owner.github.io`.
+After creating the repository, enable **Settings → Pages → Build and deployment → GitHub Actions** once. The workflow reads the Pages base path automatically, so links work for both project sites and user or organization sites. The source repository and published website are public.
