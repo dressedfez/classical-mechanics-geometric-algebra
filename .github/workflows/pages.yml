@@ -6,6 +6,12 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish the book to GitHub Pages (the site will be public)"
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -19,6 +25,7 @@ jobs:
 
       - name: Configure GitHub Pages
         id: pages
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish }}
         uses: actions/configure-pages@v5
 
       - name: Set up Node.js
@@ -35,14 +42,14 @@ jobs:
           BASE_URL: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload the website for deployment
-        if: ${{ github.event_name != 'pull_request' }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish }}
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./_build/html
 
   deploy:
     needs: build
-    if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main' }}
     permissions:
       pages: write
       id-token: write
