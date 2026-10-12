@@ -36,6 +36,12 @@ jobs:
       - name: Install MyST
         run: npm install --global mystmd@1.11.0
 
+      - name: Set up Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Build the book PDF
+        run: myst build --typst
+
       - name: Build the static website
         run: myst build --html
         env:

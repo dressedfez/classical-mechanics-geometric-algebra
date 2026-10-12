@@ -13,10 +13,21 @@ myst start
 ## Build the static website
 
 ```sh
+myst build --typst
 myst build --html
 ```
 
-The generated website is written to `_build/html/`.
+The generated website is written to `_build/html/` and includes the freshly built PDF linked from the start page.
+
+## Build a PDF
+
+With Typst and MyST installed, run:
+
+```sh
+myst build --typst
+```
+
+The PDF is written to `_build/exports/classical-mechanics-with-geometric-algebra.pdf`. The export includes the introduction and chapters that currently have full drafts; the remaining chapters are still represented by the book outline. The local Typst template is based on the MIT-licensed [MyST plain Typst book template](https://github.com/myst-templates/plain_typst_book) and keeps the PDF numbering consistent with the headings in the manuscript.
 
 ## Publish with GitHub Pages
 

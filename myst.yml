@@ -4,6 +4,17 @@ project:
   id: 0cfb27ea-cf20-418f-a36b-a24eb2b3a2c6
   title: Classical Mechanics with Geometric Algebra
   description: An introductory mechanics book that uses geometric algebra where it clarifies the geometry and compares it with conventional methods.
+  static_files:
+    - _build/exports/classical-mechanics-with-geometric-algebra.pdf
+  exports:
+    - id: full-book-pdf
+      format: typst
+      template: ./templates/plain_typst_book
+      output: _build/exports/classical-mechanics-with-geometric-algebra.pdf
+      articles:
+        - file: chapters/00-introduction.md
+        - file: chapters/01-vectors-products-oriented-geometry.md
+        - file: chapters/02-geometric-algebra-foundations.md
   toc:
     - file: index.md
     - file: chapters/00-introduction.md
