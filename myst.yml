@@ -8,6 +8,7 @@ project:
     - file: index.md
     - file: chapters/00-introduction.md
     - file: chapters/01-vectors-products-oriented-geometry.md
+    - file: chapters/02-geometric-algebra-foundations.md
 site:
   template: book-theme
   title: Classical Mechanics with Geometric Algebra

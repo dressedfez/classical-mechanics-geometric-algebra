@@ -12,11 +12,11 @@ The intended reader knows school-level classical mechanics, including Newton’s
 
 ### Part I — The mathematical language
 
-1. **Vectors, products, and oriented geometry** — Scalars and vectors; inner and outer products; the geometric product, `ab = a·b + a∧b`; bivectors as oriented plane elements; blades, grades, multivectors, and pseudoscalars. Develop the ideas in the plane before moving to three dimensions.
-2. **Rotations and geometric algebra** — Reversion, reflections, rotors, and composition of rotations. Connect the plane algebra with complex numbers and explain the three-dimensional cross product as a dual representation of a bivector. Establish a notation guide comparing GA and familiar vector notation.
-3. **Calculus and kinematics** — Position, velocity, acceleration, differentiation of vector-valued functions, trajectories, and polar coordinates. Use circular motion to introduce rotors in a physical setting. Bring in gradients and line integrals as needed.
+1. **Vectors, products, and oriented geometry** — A gentle first look at scalars, vectors, and oriented area, with familiar examples from mechanics and other areas of physics. Motivate the inner, outer, and geometric products without developing the full algebra. Keep explanations and calculations in the plane, with one short preview of three-dimensional geometry.
+2. **Foundations of geometric algebra** — A self-contained mathematical introduction, beginning with vector spaces and a metric, then defining the inner, outer, and geometric products. Develop grades, blades, multivectors, basis calculations, reversion, inverses, and pseudoscalars through concrete two-dimensional examples before generalizing to three dimensions.
+3. **Calculus and kinematics** — Position, velocity, acceleration, differentiation of vector-valued functions, trajectories, and polar coordinates. Use circular motion to connect derivatives with changing direction. Bring in gradients and line integrals as needed; rotor mathematics is developed later, before the rotating-frame applications.
 
-Keep the introduction concise and orienting. Teach the vocabulary needed to read the mechanics chapters, and introduce deeper algebra when an application motivates it.
+Keep Chapter 1 concise and orienting; reserve systematic definitions and algebraic rules for Chapter 2. In later chapters, when a physics application requires a GA concept not yet developed, place a concise **Mathematical tools** section at the beginning of that chapter, before the physics. Introduce only the tools needed there and do not repeat foundations already established.
 
 ### Part II — Newtonian mechanics
 
@@ -30,9 +30,9 @@ GA is especially useful here for angular momentum and orbital geometry. Scalar e
 
 ### Part III — Rotation and rigid bodies
 
-9. **Moving and rotating reference frames** — Time-dependent bases, angular velocity, centrifugal and Coriolis terms, and examples. Derive the link between a rotor’s time evolution and angular velocity.
+9. **Moving and rotating reference frames** — Begin with a **Mathematical tools** section that develops reflections and rotors, their action on vectors, and composition of rotations. Then introduce time-dependent bases, angular velocity, centrifugal and Coriolis terms, and examples. Derive the link between a rotor’s time evolution and angular velocity before using it in the applications.
 10. **Rigid-body geometry and inertia** — Orientation, body and space frames, the inertia operator, principal axes, and the conventional inertia tensor. Relate the operator description to matrix calculations.
-11. **Rigid-body dynamics** — Euler’s equations, free rotation, stability about principal axes, gyroscopes, and the symmetric top. Use accessible examples in the main text and reserve longer treatments for optional sections.
+11. **Rigid-body dynamics** — Apply the rotor and orientation tools from Chapter 9 alongside Euler’s equations to study free rotation, stability about principal axes, gyroscopes, and the symmetric top. Use accessible examples in the main text and reserve longer treatments for optional sections.
 
 Rotation and orientation are the clearest extended applications of GA. Matrices remain useful for numerical work and for finding principal moments of inertia.
 

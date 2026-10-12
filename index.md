@@ -9,4 +9,4 @@ The book will show where GA clarifies geometric structure and where conventional
 
 The intended publication format is a navigable website built from this MyST project. Chapters, figures, equations, and references will be organized for online reading; a hosting provider can be chosen when the manuscript is ready to publish.
 
-[Start with the introduction](./chapters/00-introduction.md), which maps the route through the book, or go directly to [Chapter 1: Vectors, Products, and Oriented Geometry](./chapters/01-vectors-products-oriented-geometry.md).
+[Start with the introduction](./chapters/00-introduction.md), which maps the route through the book, or go directly to [Chapter 1: Vectors, Products, and Oriented Geometry](./chapters/01-vectors-products-oriented-geometry.md). Chapter 2 develops the mathematical foundations in detail.

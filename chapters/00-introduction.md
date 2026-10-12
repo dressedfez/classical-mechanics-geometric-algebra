@@ -15,8 +15,8 @@ No previous experience with GA, Lagrangian mechanics, or Hamiltonian mechanics i
 
 We first learn enough geometry and algebra to read the mechanics chapters, then connect that language to motion.
 
-1. **Vectors, products, and oriented geometry.** We distinguish the familiar dot product from the outer product, which records an oriented plane, and combine them in the geometric product. This gives us the basic GA vocabulary used throughout the book.
-2. **Rotations and geometric algebra.** We develop reflections and rotors as ways to represent rotations and compose them. This shows why GA is particularly natural for orientation, while also explaining how familiar cross-product formulas fit in.
+1. **Vectors, products, and oriented geometry.** We begin with familiar scalars and vectors, then meet oriented area as a preview of a new kind of geometric quantity. A few simple examples motivate the algebra without asking us to master it all at once.
+2. **Foundations of geometric algebra.** We build the algebra carefully, starting from vector spaces and their metric, then developing the outer and geometric products, grades, blades, and multivectors. Plane examples lead into three dimensions and provide tools used throughout the mechanics chapters.
 3. **Calculus and kinematics.** We use position, velocity, and acceleration to connect the algebra to actual motion. Differentiating vector-valued functions and studying circular motion prepare us for equations of motion.
 
 ### Part II — Newtonian mechanics
@@ -31,11 +31,11 @@ We take the laws and quantities you know from school mechanics and use them to s
 
 ### Part III — Rotation and rigid bodies
 
-Here we study motion in rotating frames and the motion of objects whose parts keep fixed distances from one another.
+Here we study motion in rotating frames and the motion of objects whose parts keep fixed distances from one another. Chapter 9 begins with a short mathematical-tools section on reflections and rotors, so the rotation mathematics is in place before its mechanics applications.
 
 9. **Moving and rotating reference frames.** We learn how time-dependent axes change the description of velocity and acceleration, and where centrifugal and Coriolis terms come from.
 10. **Rigid-body geometry and inertia.** A rigid body’s orientation and mass distribution determine how it responds to rotation. We connect the geometric inertia operator to the familiar inertia tensor and matrix calculations.
-11. **Rigid-body dynamics.** Euler’s equations explain free rotation, gyroscopes, and the stability of spinning bodies. Rotors give us a compact way to represent the body’s changing orientation.
+11. **Rigid-body dynamics.** Euler’s equations explain free rotation, gyroscopes, and the stability of spinning bodies. We apply the rotor tools developed earlier to represent a body’s changing orientation.
 
 ### Part IV — Lagrangian mechanics
 
