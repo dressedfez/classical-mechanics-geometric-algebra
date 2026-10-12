@@ -1,0 +1,13 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 0cfb27ea-cf20-418f-a36b-a24eb2b3a2c6
+  title: Classical Mechanics with Geometric Algebra
+  description: An introductory mechanics book that uses geometric algebra where it clarifies the geometry and compares it with conventional methods.
+  toc:
+    - file: index.md
+    - file: chapters/00-introduction.md
+    - file: chapters/01-vectors-products-oriented-geometry.md
+site:
+  template: book-theme
+  title: Classical Mechanics with Geometric Algebra

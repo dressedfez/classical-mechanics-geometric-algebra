@@ -1,0 +1,11 @@
+# MyST build output and downloaded theme assets
+_build/
+
+# Python and marimo
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Node and macOS
+node_modules/
+.DS_Store
