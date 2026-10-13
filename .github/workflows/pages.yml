@@ -18,14 +18,17 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    runs-on: ubuntu-26.04
     steps:
       - name: Check out the book source
         uses: actions/checkout@v6
 
       - name: Configure GitHub Pages
         id: pages
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.publish) }}
         uses: actions/configure-pages@v5
 
       - name: Set up Node.js
@@ -37,7 +40,7 @@ jobs:
         run: npm install --global mystmd@1.11.0
 
       - name: Set up Typst
-        uses: typst-community/setup-typst@v4
+        uses: typst-community/setup-typst@v5
 
       - name: Build the book PDF
         run: myst build --typst
@@ -48,14 +51,14 @@ jobs:
           BASE_URL: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload the website for deployment
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish }}
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.publish) }}
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./_build/html
 
   deploy:
     needs: build
-    if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main' }}
+    if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main') }}
     permissions:
       pages: write
       id-token: write
@@ -65,7 +68,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
