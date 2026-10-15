@@ -15,11 +15,43 @@ project:
         - file: chapters/00-introduction.md
         - file: chapters/01-vectors-products-oriented-geometry.md
         - file: chapters/02-geometric-algebra-foundations.md
+        - file: chapters/03-newtonian-mechanics.md
+        - file: chapters/04-work-energy-conservative-forces.md
+        - file: chapters/05-systems-of-particles-and-momentum.md
+        - file: chapters/06-oscillations.md
+        - file: chapters/07-central-forces-and-orbital-motion.md
+        - file: chapters/08-moving-and-rotating-reference-frames.md
+        - file: chapters/09-rigid-body-geometry-and-inertia.md
+        - file: chapters/10-rigid-body-dynamics.md
+        - file: chapters/11-constraints-and-generalized-coordinates.md
+        - file: chapters/12-action-symmetry-conservation.md
+        - file: chapters/13-small-oscillations-and-normal-modes.md
+        - file: chapters/14-momentum-legendre-transform-phase-space.md
+        - file: chapters/15-poisson-brackets-and-canonical-transformations.md
+        - file: chapters/16-hamilton-jacobi-theory-and-integrable-motion.md
+        - file: chapters/17-nonlinear-dynamics-and-numerical-mechanics.md
+        - file: appendices/01-reversion-sign.md
   toc:
     - file: index.md
     - file: chapters/00-introduction.md
     - file: chapters/01-vectors-products-oriented-geometry.md
     - file: chapters/02-geometric-algebra-foundations.md
+    - file: chapters/03-newtonian-mechanics.md
+    - file: chapters/04-work-energy-conservative-forces.md
+    - file: chapters/05-systems-of-particles-and-momentum.md
+    - file: chapters/06-oscillations.md
+    - file: chapters/07-central-forces-and-orbital-motion.md
+    - file: chapters/08-moving-and-rotating-reference-frames.md
+    - file: chapters/09-rigid-body-geometry-and-inertia.md
+    - file: chapters/10-rigid-body-dynamics.md
+    - file: chapters/11-constraints-and-generalized-coordinates.md
+    - file: chapters/12-action-symmetry-conservation.md
+    - file: chapters/13-small-oscillations-and-normal-modes.md
+    - file: chapters/14-momentum-legendre-transform-phase-space.md
+    - file: chapters/15-poisson-brackets-and-canonical-transformations.md
+    - file: chapters/16-hamilton-jacobi-theory-and-integrable-motion.md
+    - file: chapters/17-nonlinear-dynamics-and-numerical-mechanics.md
+    - file: appendices/01-reversion-sign.md
 site:
   template: book-theme
   title: Classical Mechanics with Geometric Algebra

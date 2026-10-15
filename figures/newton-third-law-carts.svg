@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+<title id="title">Equal and opposite interaction forces on two carts</title>
+<desc id="desc">Two carts on a low-friction track push apart through a central force sensor or spring. An arrow on cart A points left and an arrow on cart B points right, representing the equal and opposite forces each cart exerts on the other.</desc>
+<rect width="1000" height="330" fill="#ffffff"/>
+<text x="40" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#172b4d">Measure both sides of one interaction</text>
+<line x1="80" y1="252" x2="920" y2="252" stroke="#52606d" stroke-width="4"/>
+<line x1="95" y1="264" x2="905" y2="264" stroke="#9aa5b1" stroke-width="2"/>
+<!-- cart A -->
+<rect x="180" y="171" width="205" height="72" rx="8" fill="#e7f0fb" stroke="#355070" stroke-width="3"/>
+<circle cx="225" cy="250" r="14" fill="#ffffff" stroke="#355070" stroke-width="3"/>
+<circle cx="340" cy="250" r="14" fill="#ffffff" stroke="#355070" stroke-width="3"/>
+<text x="265" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#172b4d">Cart A</text>
+<!-- cart B -->
+<rect x="615" y="171" width="205" height="72" rx="8" fill="#e7f0fb" stroke="#355070" stroke-width="3"/>
+<circle cx="660" cy="250" r="14" fill="#ffffff" stroke="#355070" stroke-width="3"/>
+<circle cx="775" cy="250" r="14" fill="#ffffff" stroke="#355070" stroke-width="3"/>
+<text x="700" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#172b4d">Cart B</text>
+<!-- central force sensor and spring -->
+<line x1="385" y1="207" x2="615" y2="207" stroke="#805ad5" stroke-width="5"/>
+<rect x="462" y="184" width="76" height="46" rx="6" fill="#f4efff" stroke="#6b46c1" stroke-width="3"/>
+<path d="M470 207 l9 -12 l10 24 l10 -24 l10 24 l10 -24 l10 12" fill="none" stroke="#6b46c1" stroke-width="3"/>
+<text x="500" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#553c9a">spring / force sensors</text>
+<!-- forces -->
+<line x1="365" y1="112" x2="218" y2="112" stroke="#cf6a1d" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="220" y="91" font-family="Arial, sans-serif" font-size="16" fill="#9a4d0b">force on A from B</text>
+<line x1="635" y1="112" x2="782" y2="112" stroke="#2563eb" stroke-width="5" marker-end="url(#arrowBlue)"/>
+<text x="640" y="91" font-family="Arial, sans-serif" font-size="16" fill="#1d4ed8">force on B from A</text>
+<text x="351" y="305" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#243b53">The force pair acts on different carts.</text>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#cf6a1d"/>
+  </marker>
+  <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+  </marker>
+</defs>
+</svg>

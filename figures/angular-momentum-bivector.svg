@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 390" role="img" aria-labelledby="title desc">
+<title id="title">Angular momentum as an oriented plane</title>
+<desc id="desc">Position and momentum vectors span a shaded oriented parallelogram. Its area is the magnitude of the angular momentum bivector. In three dimensions the equivalent axial vector is perpendicular to the plane.</desc>
+<rect width="920" height="390" fill="#ffffff"/>
+<text x="42" y="42" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#172b4d">Angular momentum keeps the plane of motion</text>
+<text x="42" y="70" font-family="Arial, sans-serif" font-size="16" fill="#52606d">The outer product records the oriented parallelogram spanned by position and momentum.</text>
+<!-- Origin and spanning parallelogram -->
+<polygon points="150,305 500,305 620,145 270,145" fill="#bfdbfe" opacity="0.8" stroke="#2563eb" stroke-width="2"/>
+<line x1="150" y1="305" x2="500" y2="305" stroke="#2563eb" stroke-width="5" marker-end="url(#blueArrow)"/>
+<line x1="150" y1="305" x2="270" y2="145" stroke="#cf6a1d" stroke-width="5" marker-end="url(#orangeArrow)"/>
+<line x1="500" y1="305" x2="620" y2="145" stroke="#64748b" stroke-width="3" stroke-dasharray="8 7"/>
+<line x1="270" y1="145" x2="620" y2="145" stroke="#64748b" stroke-width="3" stroke-dasharray="8 7"/>
+<circle cx="150" cy="305" r="7" fill="#172b4d"/>
+<circle cx="270" cy="145" r="7" fill="#172b4d"/>
+<text x="126" y="332" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#172b4d">O</text>
+<text x="276" y="133" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#9a4d0b">r</text>
+<text x="505" y="330" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1d4ed8">p</text>
+<text x="342" y="237" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1e3a8a">oriented area</text>
+<text x="85" y="370" font-family="Arial, sans-serif" font-size="15" fill="#52606d">For this drawing, p is translated parallel to itself to start at O.</text>
+<!-- 3D dual representation -->
+<line x1="685" y1="286" x2="830" y2="286" stroke="#94a3b8" stroke-width="2"/>
+<line x1="685" y1="286" x2="742" y2="210" stroke="#94a3b8" stroke-width="2"/>
+<line x1="685" y1="286" x2="685" y2="130" stroke="#94a3b8" stroke-width="2"/>
+<polygon points="690,278 790,278 816,220 716,220" fill="#dbeafe" stroke="#2563eb" stroke-width="2" opacity="0.9"/>
+<line x1="752" y1="250" x2="752" y2="113" stroke="#7c3aed" stroke-width="5" marker-end="url(#purpleArrow)"/>
+<text x="760" y="119" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#6b21a8">L</text>
+<text x="687" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#6b21a8">perpendicular</text>
+<text x="687" y="344" font-family="Arial, sans-serif" font-size="15" fill="#52606d">3D cross-product vector</text>
+<text x="689" y="365" font-family="Arial, sans-serif" font-size="15" fill="#52606d">encodes the same plane</text>
+<defs>
+  <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/></marker>
+  <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#cf6a1d"/></marker>
+  <marker id="purpleArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#7c3aed"/></marker>
+</defs>
+</svg>

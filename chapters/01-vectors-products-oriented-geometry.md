@@ -61,7 +61,7 @@ $$
 
 The outer product, written $\mathbf a\wedge\mathbf b$, describes the oriented area spanned by the vectors. In the plane chosen above, it is the signed area multiplied by the unit oriented area of that plane.
 
-The geometric product is defined for vectors in the metric vector space used to represent the geometry—the ambient or **embedding space**. For any two vectors in that space, it combines the scalar alignment and oriented-plane information:
+The geometric product is defined for vectors in the metric vector space used to represent the geometry (the ambient or **embedding space**). For any two vectors in that space, it combines the scalar alignment and oriented-plane information:
 
 $$
 \mathbf a\mathbf b=\mathbf a\cdot\mathbf b+\mathbf a\wedge\mathbf b.

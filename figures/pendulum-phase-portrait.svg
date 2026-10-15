@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 500" role="img" aria-labelledby="title desc">
+<title id="title">Phase portrait of the nonlinear pendulum</title>
+<desc id="desc">Closed libration curves surround the stable downward position, the separatrix passes through the unstable upright position, and open rotation curves lie outside it.</desc>
+<rect width="820" height="500" fill="#ffffff"/>
+<text x="38" y="42" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#172b4d">Nonlinear pendulum in phase space</text>
+<line x1="120" y1="270" x2="700" y2="270" stroke="#64748b" stroke-width="2" marker-end="url(#axisArrow)"/>
+<line x1="410" y1="420" x2="410" y2="92" stroke="#64748b" stroke-width="2" marker-end="url(#axisArrow)"/>
+<text x="708" y="276" font-family="Arial, sans-serif" font-size="18" fill="#334155">θ</text>
+<text x="421" y="108" font-family="Arial, sans-serif" font-size="18" fill="#334155">θ̇</text>
+<text x="110" y="294" font-family="Arial, sans-serif" font-size="15" fill="#52606d">−π</text>
+<text x="698" y="294" font-family="Arial, sans-serif" font-size="15" fill="#52606d">π</text>
+<text x="417" y="293" font-family="Arial, sans-serif" font-size="15" fill="#52606d">0</text>
+<ellipse cx="410" cy="270" rx="74" ry="48" fill="none" stroke="#2563eb" stroke-width="3"/>
+<ellipse cx="410" cy="270" rx="128" ry="79" fill="none" stroke="#60a5fa" stroke-width="3"/>
+<path d="M120 270 C195 265 244 234 285 193 C325 153 363 126 410 119 C457 126 495 153 535 193 C576 234 625 265 700 270" fill="none" stroke="#cf6a1d" stroke-width="4"/>
+<path d="M120 270 C195 275 244 306 285 347 C325 387 363 414 410 421 C457 414 495 387 535 347 C576 306 625 275 700 270" fill="none" stroke="#cf6a1d" stroke-width="4"/>
+<path d="M140 132 C260 112 340 102 410 100 C490 102 570 112 680 132" fill="none" stroke="#15803d" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M140 408 C260 428 340 438 410 440 C490 438 570 428 680 408" fill="none" stroke="#15803d" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="410" cy="270" r="6" fill="#172b4d"/>
+<circle cx="120" cy="270" r="6" fill="#9a4d0b"/>
+<circle cx="700" cy="270" r="6" fill="#9a4d0b"/>
+<text x="449" y="205" font-family="Arial, sans-serif" font-size="16" fill="#1d4ed8">librations</text>
+<text x="510" y="156" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#9a4d0b">separatrix</text>
+<text x="575" y="112" font-family="Arial, sans-serif" font-size="16" fill="#166534">rotations</text>
+<text x="38" y="475" font-family="Arial, sans-serif" font-size="16" fill="#475569">The states at θ = −π and θ = π represent the same upright configuration.</text>
+<defs><marker id="axisArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker></defs>
+</svg>

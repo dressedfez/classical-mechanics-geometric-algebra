@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 390" role="img" aria-labelledby="title desc">
+<title id="title">Work as area under a force-position graph</title>
+<desc id="desc">A line for the force F sub x equals 4.0 x newtons rises from the origin to 8 newtons at 2 metres. The triangular area beneath the line is shaded and labeled as 8 joules of work.</desc>
+<rect width="760" height="390" fill="#ffffff"/>
+<text x="45" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#172b4d">Work from a force-position graph</text>
+<polygon points="110,300 500,300 500,120" fill="#bfdbfe" opacity="0.8"/>
+<line x1="110" y1="300" x2="625" y2="300" stroke="#52606d" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="110" y1="300" x2="110" y2="75" stroke="#52606d" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="110" y1="300" x2="500" y2="120" stroke="#2563eb" stroke-width="5"/>
+<line x1="500" y1="300" x2="500" y2="120" stroke="#64748b" stroke-width="2" stroke-dasharray="6 6"/>
+<line x1="104" y1="120" x2="116" y2="120" stroke="#52606d" stroke-width="2"/>
+<line x1="500" y1="294" x2="500" y2="306" stroke="#52606d" stroke-width="2"/>
+<text x="72" y="307" font-family="Arial, sans-serif" font-size="15" fill="#52606d">0</text>
+<text x="482" y="327" font-family="Arial, sans-serif" font-size="15" fill="#52606d">2.0</text>
+<text x="66" y="125" font-family="Arial, sans-serif" font-size="15" fill="#52606d">8.0</text>
+<text x="315" y="338" font-family="Arial, sans-serif" font-size="17" fill="#243b53">position, x (m)</text>
+<text x="53" y="218" transform="rotate(-90 53 218)" font-family="Arial, sans-serif" font-size="17" fill="#243b53">force, Fₓ (N)</text>
+<text x="350" y="176" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1d4ed8">Fₓ = 4.0x N</text>
+<text x="250" y="265" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1e3a8a">shaded area = work = 8.0 J</text>
+<text x="510" y="116" font-family="Arial, sans-serif" font-size="15" fill="#243b53">(2.0 m, 8.0 N)</text>
+<defs>
+  <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+    <path d="M0,0 L9,4.5 L0,9 Z" fill="#52606d"/>
+  </marker>
+</defs>
+</svg>

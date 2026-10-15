@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 500" role="img" aria-labelledby="title desc">
+<title id="title">Geometry of a central-force orbit</title>
+<desc id="desc">An elliptical orbit around a central mass, with the radius, tangential direction, radial force, and a small swept sector indicated.</desc>
+<rect width="820" height="500" fill="#ffffff"/>
+<text x="36" y="42" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#172b4d">Central force and the orbital plane</text>
+<ellipse cx="390" cy="270" rx="270" ry="150" fill="#eff6ff" stroke="#2563eb" stroke-width="4" transform="rotate(-12 390 270)"/>
+<circle cx="300" cy="270" r="11" fill="#cf6a1d" stroke="#9a4d0b" stroke-width="2"/>
+<text x="254" y="300" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#9a4d0b">force centre</text>
+<circle cx="542" cy="178" r="10" fill="#172b4d"/>
+<line x1="300" y1="270" x2="542" y2="178" stroke="#475569" stroke-width="3" marker-end="url(#darkArrow)"/>
+<text x="405" y="205" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#334155">r</text>
+<line x1="542" y1="178" x2="504" y2="279" stroke="#15803d" stroke-width="4" marker-end="url(#greenArrow)"/>
+<text x="470" y="300" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#166534">tangent direction</text>
+<line x1="542" y1="178" x2="446" y2="214" stroke="#cf6a1d" stroke-width="4" marker-end="url(#orangeArrow)"/>
+<text x="414" y="240" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#9a4d0b">central force</text>
+<path d="M300 270 L337 256 A40 40 0 0 1 339 285 Z" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2"/>
+<text x="339" y="281" font-family="Arial, sans-serif" font-size="16" fill="#1d4ed8">dA</text>
+<text x="60" y="445" font-family="Arial, sans-serif" font-size="18" fill="#334155">The force and radius lie in the fixed plane represented by the conserved bivector J = r ∧ p.</text>
+<defs>
+  <marker id="darkArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker>
+  <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#15803d"/></marker>
+  <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#cf6a1d"/></marker>
+</defs>
+</svg>

@@ -165,6 +165,8 @@ $$
 =-1.
 $$
 
+The rule $\mathbf I^2=-1$ echoes the defining rule $i^2=-1$ for the imaginary unit. In this algebra, the role of $i$ is played by the plane's unit oriented area. The next subsection makes the connection precise.
+
 Now multiply the vectors from the earlier example. Distributivity gives
 
 $$
@@ -184,7 +186,45 @@ $$
 
 This calculation illustrates how the geometric product gathers two familiar answers into one object and lets us recover either answer by taking its grade.
 
-## 2.6 Reversion and inverses
+## 2.6 The connection with complex numbers
+
+In the oriented Euclidean plane, scalars and bivectors are closed under the geometric product. Together they form the **even subalgebra**, whose elements have the form $\alpha+\beta\mathbf I$. Since $\mathbf I^2=-1$, addition and multiplication here follow exactly the rules for complex numbers. We can express the correspondence as
+
+$$
+\alpha+\beta\mathbf I\quad\longleftrightarrow\quad\alpha+\beta i.
+$$
+
+This map preserves both addition and multiplication.
+
+For example,
+
+$$
+(2+3\mathbf I)(1-2\mathbf I)=8-\mathbf I
+\quad\longleftrightarrow\quad
+(2+3i)(1-2i)=8-i.
+$$
+
+Thus the scalar-and-bivector part of the planar algebra is isomorphic to the complex numbers. Geometric algebra makes the geometric role of the imaginary unit explicit: $\mathbf I=\mathbf e_1\mathbf e_2$ is the oriented unit area formed by the chosen perpendicular directions. For a vector $\mathbf a=a_1\mathbf e_1+a_2\mathbf e_2$, right multiplication by $\mathbf I$ gives
+
+$$
+\mathbf a\mathbf I=-a_2\mathbf e_1+a_1\mathbf e_2,
+$$
+
+which is a quarter-turn in the positive direction of the chosen orientation. This is the same coordinate action as multiplying $a_1+i a_2$ by $i$.
+
+The connection also makes the geometric product of two vectors easy to read. Associate the complex coordinate $z_{\mathbf a}=a_1+i a_2$ to $\mathbf a$, and similarly $z_{\mathbf b}=b_1+i b_2$ to $\mathbf b$. Then
+
+$$
+\mathbf a\mathbf b
+=\mathbf a\cdot\mathbf b+\mathbf a\wedge\mathbf b
+= (a_1b_1+a_2b_2)+(a_1b_2-a_2b_1)\mathbf I
+\quad\longleftrightarrow\quad
+\overline{z_{\mathbf a}}z_{\mathbf b}.
+$$
+
+For the vectors used above, $z_{\mathbf a}=2+i$ and $z_{\mathbf b}=1+3i$, so $\overline{z_{\mathbf a}}z_{\mathbf b}=(2-i)(1+3i)=5+5i$, matching $\mathbf a\mathbf b=5+5\mathbf I$. The scalar part records their alignment, while the imaginary or bivector part records their oriented area. Complex numbers remain a convenient language for many planar calculations. Geometric algebra keeps vectors and oriented areas as distinct geometric objects, and extends its product language to three dimensions and beyond.
+
+## 2.7 Reversion and inverses
 
 The **reverse** of a product reverses the order of its vector factors. We write the reverse of a multivector $M$ as $\widetilde M$. Scalars and vectors are unchanged, while a bivector changes sign:
 
@@ -202,18 +242,20 @@ $$
 \widetilde M=(-1)^{k(k-1)/2}M.
 $$
 
+For grades zero through three, the signs are $+,+,-,-$: scalars and vectors are unchanged, while bivectors and trivectors change sign. [Appendix A](../appendices/01-reversion-sign.md) derives the general rule.
+
 For products, $\widetilde{MN}=\widetilde N\,\widetilde M$. Reversion will be useful when we study rotations and rotors.
 
-An element $M$ has an **inverse** $M^{-1}$ if multiplication by it undoes multiplication by $M$, so $M^{-1}M=MM^{-1}=1$. Every nonzero Euclidean vector has an inverse. Since $\mathbf a^2=|\mathbf a|^2$,
+An element $M$ has an **inverse** $M^{-1}$ if multiplication by it undoes multiplication by $M$, so $M^{-1}M=MM^{-1}=1$. This may be unfamiliar: ordinary vector algebra has dot and cross products, but neither gives a vector a multiplicative inverse in this sense. The geometric product does, and every nonzero Euclidean vector has one. Since $\mathbf a^2=|\mathbf a|^2$,
 
 $$
 \mathbf a^{-1}=\frac{\mathbf a}{|\mathbf a|^2},
 \qquad \mathbf a\ne0.
 $$
 
-Indeed, $\mathbf a\,\mathbf a^{-1}=\mathbf a^2/|\mathbf a|^2=1$. Not every multivector is invertible; whenever we use an inverse, its existence will be clear from the construction or stated explicitly.
+Indeed, $\mathbf a\,\mathbf a^{-1}=\mathbf a^{-1}\mathbf a=\mathbf a^2/|\mathbf a|^2=1$. Not every multivector is invertible; whenever we use an inverse, its existence will be clear from the construction or stated explicitly.
 
-## 2.7 From two dimensions to three
+## 2.8 From two dimensions to three
 
 In three-dimensional Euclidean space, choose three mutually perpendicular unit vectors. The basis rules are
 
@@ -238,11 +280,12 @@ In three dimensions the cross product is related to the outer product by a duali
 
 The dimension changes the list of grades and basis blades, but the geometric product still combines the metric information with the oriented information. That consistency is what makes the planar examples a reliable guide to three-dimensional mechanics.
 
-## 2.8 What to remember
+## 2.9 What to remember
 
 - The metric defines lengths and angles through the inner product.
 - The outer product records oriented area or, in higher dimensions, oriented higher-grade geometry.
 - The geometric product combines inner and outer products: $\mathbf a\mathbf b=\mathbf a\cdot\mathbf b+\mathbf a\wedge\mathbf b$.
+- In the plane, scalars and bivectors form a complex-number-like subalgebra, with the oriented unit area $\mathbf I$ playing the role of $i$.
 - Grades identify the geometric type of each part; blades are simple elements, and multivectors can contain several grades.
 - Reversion reverses product order, and nonzero Euclidean vectors have inverses.
 - A pseudoscalar represents the oriented unit volume of a space; in three dimensions, duality connects bivectors with the familiar cross product.
@@ -255,3 +298,4 @@ The dimension changes the list of grades and basis blades, but the geometric pro
 4. Find the inverse of $\mathbf a=2\mathbf e_1+\mathbf e_2$ and verify by multiplication that $\mathbf a\mathbf a^{-1}=1$.
 5. In three dimensions, list how many independent basis blades have grades zero, one, two, and three. What geometric objects do they represent?
 6. Explain in words what the cross product’s perpendicular vector has to do with the oriented plane represented by the outer product.
+7. For $\mathbf a=\mathbf e_1+2\mathbf e_2$ and $\mathbf b=3\mathbf e_1-\mathbf e_2$, verify that $\mathbf a\mathbf b$ corresponds to $\overline{z_{\mathbf a}}z_{\mathbf b}$ under the planar complex-number correspondence.

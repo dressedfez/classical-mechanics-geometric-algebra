@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Precession of a Foucault pendulum's swing plane</title>
+<desc id="desc">A top-down view at northern latitude shows east and north axes, the initial swing line, and its later clockwise orientation. The leading precession rate is minus Earth's rotation rate times the sine of latitude.</desc>
+<rect width="960" height="480" fill="#ffffff"/>
+<text x="42" y="48" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#172b4d">The swing plane turns relative to the ground</text>
+<text x="42" y="82" font-family="Arial, sans-serif" font-size="18" fill="#475569">Top-down view in the northern hemisphere (φ &gt; 0)</text>
+
+<line x1="480" y1="410" x2="480" y2="135" stroke="#64748b" stroke-width="4"/>
+<path d="M480 112 L469 135 L491 135 Z" fill="#64748b"/>
+<text x="503" y="145" font-family="Arial, sans-serif" font-size="19" fill="#334155">north</text>
+<line x1="218" y1="274" x2="744" y2="274" stroke="#64748b" stroke-width="4"/>
+<path d="M768 274 L744 263 L744 285 Z" fill="#64748b"/>
+<text x="721" y="248" font-family="Arial, sans-serif" font-size="19" fill="#334155">east</text>
+
+<line x1="298" y1="108" x2="662" y2="440" stroke="#94a3b8" stroke-width="8" stroke-dasharray="16 12"/>
+<text x="82" y="168" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#64748b">initial swing plane</text>
+
+<line x1="286" y1="345" x2="674" y2="203" stroke="#2563eb" stroke-width="9"/>
+<circle cx="480" cy="274" r="9" fill="#172b4d"/>
+<text x="656" y="190" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1d4ed8">after time t</text>
+
+<path d="M557 142 A145 145 0 0 0 616 226" fill="none" stroke="#7c3aed" stroke-width="7"/>
+<path d="M632 231 L612 222 L616 243 Z" fill="#7c3aed"/>
+<text x="642" y="155" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#6d28d9">clockwise</text>
+<text x="42" y="444" font-family="Arial, sans-serif" font-size="20" fill="#172b4d">Leading precession rate: theta-dot = -Omega_E sin(phi)</text>
+<text x="42" y="470" font-family="Arial, sans-serif" font-size="16" fill="#475569">The vertical component of Earth's rotation sets the rate; it vanishes at the equator.</text>
+</svg>

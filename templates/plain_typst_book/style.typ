@@ -65,8 +65,9 @@
   // Set figure numbering to x.y where x is chapter number and y is figure number within chapter
 
   set figure(numbering: (..args) => {
-    // get current chapter number (first level of heading)
-    let chapter = counter(heading).display((..nums) => nums.pos().at(0)) // nums is array of all levels, at(0) is first level, display formats it.
+    // MyST titles include their chapter numbers as text and are not auto-numbered.
+    // Step the heading counter in the level-1 rule below, and subtract the chapter 0 introduction.
+    let chapter = counter(heading).display((..nums) => str(nums.pos().at(0) - 1))
     let fig = counter(figure).display("1")    // counter counts, display formats it
     [#chapter.#fig]
   })
@@ -143,6 +144,7 @@
 //RESETING NUMBERING
   show heading.where(level: 1): it => {
     // Reset all counters with a new chapter
+    counter(heading).step(level: 1)           // MyST title numbering is part of the title text
     counter(figure).update(0)                // all figures (irrespective of kind)
     counter(figure.where(kind: table)).update(0) // specific for tables
     counter(math.equation).update(0)
