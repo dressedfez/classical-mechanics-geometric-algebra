@@ -43,10 +43,14 @@ jobs:
         uses: typst-community/setup-typst@v5
 
       - name: Build the book PDF
-        run: myst build --pdf
+        run: myst --debug build --pdf
 
       - name: Verify the book PDF
         run: test -s _build/exports/classical-mechanics-with-geometric-algebra.pdf
+
+      - name: List PDF export artifacts after a failed build
+        if: failure()
+        run: find _build -type f \( -name '*.pdf' -o -name '*.typ' \) -print
 
       - name: Build the static website
         run: myst build --html
