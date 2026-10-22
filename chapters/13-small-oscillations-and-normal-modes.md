@@ -24,7 +24,7 @@ $$
 where the **stiffness matrix** is the Hessian
 
 $$
-K_{ij}=\left.\frac{\partial^2U}{\partial q^i\partial q^j}\right|_{q_0}.
+K_{ij}=\left[\frac{\partial^2U}{\partial q^i\partial q^j}\right]_{q_0}.
 $$
 
 In components, this expansion is $U(q_0+\eta)=U(q_0)+\sum_i U_i\eta_i+\tfrac12\sum_{ij}U_{ij}\eta_i\eta_j+\cdots$. Equilibrium means $U_i=0$, and equality of mixed partial derivatives makes $K$ symmetric. At a nondegenerate stable equilibrium, the curvature is positive in every allowed direction, so $\boldsymbol\eta^{\mathsf T}K\boldsymbol\eta>0$ for every nonzero small displacement. If a constraint removes a direction, stability is tested only among the remaining allowed displacements. When a curvature vanishes, higher-order terms decide stability and the quadratic normal-mode approximation may not suffice.

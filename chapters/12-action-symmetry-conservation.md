@@ -22,7 +22,7 @@ The lecture notation places arrows over vector symbols; here we use boldface for
 For a scalar function this is the familiar gradient, written in geometric-algebra notation. Its defining practical property is that it gives the rate of change in any chosen direction $\mathbf a$:
 
 $$
-\left.\frac{d}{d\epsilon}F(\mathbf r+\epsilon\mathbf a)\right|_{\epsilon=0}
+\left[\frac{d}{d\epsilon}F(\mathbf r+\epsilon\mathbf a)\right]_{\epsilon=0}
 =\mathbf a\cdot\partial_{\mathbf r}F.
 $$
 
@@ -30,7 +30,7 @@ Thus $\partial_{\mathbf r}F$ is a vector, while the directional derivative along
 
 $$
 D_{\mathbf a}F
-:=\left.\frac{d}{d\epsilon}F(\mathbf r+\epsilon\mathbf a)\right|_{\epsilon=0}
+:=\left[\frac{d}{d\epsilon}F(\mathbf r+\epsilon\mathbf a)\right]_{\epsilon=0}
 =\mathbf a\cdot\partial_{\mathbf r}F.
 $$
 
@@ -90,7 +90,7 @@ Here $\boldsymbol\eta(t)$ is an arbitrary smooth vector-valued variation that va
 Among nearby paths with the same endpoints and elapsed time, the physical path makes the action stationary:
 
 $$
-\delta S=\left.\frac{d}{d\epsilon}S[\mathbf r_\epsilon]\right|_{\epsilon=0}=0.
+\delta S=\left[\frac{d}{d\epsilon}S[\mathbf r_\epsilon]\right]_{\epsilon=0}=0.
 $$
 
 Stationary does not necessarily mean that the action is a minimum. It can also be a maximum or a saddle point.
@@ -386,7 +386,7 @@ Coordinates remain valuable. The scalar Euler–Lagrange equations are often the
 
 ### Exercises
 
-1. For a scalar function $F(\mathbf r)$, verify from its component definition that $\left.\frac{d}{d\epsilon}F(\mathbf r+\epsilon\mathbf a)\right|_{0}=\mathbf a\cdot\partial_{\mathbf r}F$.
+1. For a scalar function $F(\mathbf r)$, verify from its component definition that $\left[\frac{d}{d\epsilon}F(\mathbf r+\epsilon\mathbf a)\right]_{0}=\mathbf a\cdot\partial_{\mathbf r}F$.
 2. In a plane with fixed unit bivector $I$, verify from the definition that $D_{\mathbf a}(\mathbf r I)=\mathbf a I$. Then use the product rule to differentiate $(\mathbf r I)\mathbf r$ in a fixed direction.
 3. For $F(\mathbf r,t)=\tfrac12k\mathbf r^2+ct$, use the chain rule to find $dF/dt$ along a path $\mathbf r(t)$.
 4. Starting from the action in Section 12.2, show each step of the integration by parts that gives the vector Euler–Lagrange equation.
