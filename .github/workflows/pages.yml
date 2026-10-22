@@ -48,9 +48,64 @@ jobs:
       - name: Verify the book PDF
         run: test -s _build/exports/classical-mechanics-with-geometric-algebra.pdf
 
-      - name: List PDF export artifacts after a failed build
+      - name: Diagnose which half of the book breaks PDF export
         if: failure()
-        run: find _build -type f \( -name '*.pdf' -o -name '*.typ' \) -print
+        run: |
+          mkdir -p _build/exports
+          cat > myst-diagnostic-first.yml <<'YAML'
+          version: 1
+          project:
+            id: 0cfb27ea-cf20-418f-a36b-a24eb2b3a2c6
+            title: Classical Mechanics with Geometric Algebra
+            exports:
+              - format: pdf
+                template: ./templates/plain_typst_book
+                output: ./_build/exports/diagnostic-first.pdf
+                articles:
+                  - chapters/00-introduction.md
+                  - chapters/01-vectors-products-oriented-geometry.md
+                  - chapters/02-geometric-algebra-foundations.md
+                  - chapters/03-newtonian-mechanics.md
+                  - chapters/04-work-energy-conservative-forces.md
+                  - chapters/05-systems-of-particles-and-momentum.md
+                  - chapters/06-oscillations.md
+                  - chapters/07-central-forces-and-orbital-motion.md
+                  - chapters/08-moving-and-rotating-reference-frames.md
+          YAML
+          myst --debug --config myst-diagnostic-first.yml build --pdf || true
+          if test -s _build/exports/diagnostic-first.pdf; then
+            echo 'FIRST HALF: PDF export succeeded'
+          else
+            echo 'FIRST HALF: PDF export failed'
+          fi
+
+          cat > myst-diagnostic-second.yml <<'YAML'
+          version: 1
+          project:
+            id: 0cfb27ea-cf20-418f-a36b-a24eb2b3a2c6
+            title: Classical Mechanics with Geometric Algebra
+            exports:
+              - format: pdf
+                template: ./templates/plain_typst_book
+                output: ./_build/exports/diagnostic-second.pdf
+                articles:
+                  - chapters/09-rigid-body-geometry-and-inertia.md
+                  - chapters/10-rigid-body-dynamics.md
+                  - chapters/11-constraints-and-generalized-coordinates.md
+                  - chapters/12-action-symmetry-conservation.md
+                  - chapters/13-small-oscillations-and-normal-modes.md
+                  - chapters/14-momentum-legendre-transform-phase-space.md
+                  - chapters/15-poisson-brackets-and-canonical-transformations.md
+                  - chapters/16-hamilton-jacobi-theory-and-integrable-motion.md
+                  - chapters/17-nonlinear-dynamics-and-numerical-mechanics.md
+                  - appendices/01-reversion-sign.md
+          YAML
+          myst --debug --config myst-diagnostic-second.yml build --pdf || true
+          if test -s _build/exports/diagnostic-second.pdf; then
+            echo 'SECOND HALF: PDF export succeeded'
+          else
+            echo 'SECOND HALF: PDF export failed'
+          fi
 
       - name: Build the static website
         run: myst build --html
