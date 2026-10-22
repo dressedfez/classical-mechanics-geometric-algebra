@@ -96,7 +96,7 @@ If we reuse the rotor $R$ introduced for rotations, we can also describe the bob
 The kinetic energy also reveals a connection between physical geometry and generalized coordinates. Substituting the velocity expression into $T=\tfrac12\sum_a m_a\mathbf v_a^2$ gives
 
 $$
-T=\frac12\sum_{i,j}g_{ij}(q)\,\dot q^i\dot q^j,
+T=\frac{1}{2}\sum_{i,j}g_{ij}(q)\,\dot q^i\dot q^j,
 \qquad
 g_{ij}(q)=\sum_a m_a\frac{\partial\mathbf r_a}{\partial q^i}\cdot\frac{\partial\mathbf r_a}{\partial q^j}.
 $$
@@ -164,7 +164,7 @@ $$
 The generalized coordinate variations are independent, so the coefficient of each $\delta q^i$ must vanish. We now express the inertial term using the kinetic energy. For fixed constraints, the position $\mathbf r_a$ depends on $q^i$ but not explicitly on time, and
 
 $$
-T=\frac12\sum_a m_a\dot{\mathbf r}_a^2.
+T=\frac{1}{2}\sum_a m_a\dot{\mathbf r}_a^2.
 $$
 
 Differentiation gives
@@ -247,7 +247,7 @@ The coordinate tangent vector is perpendicular to $\mathbf r$ and has length $\e
 $$
 \dot{\mathbf r}^{\,2}=\ell^2\dot\theta^2,
 \qquad
-T=\frac12m\ell^2\dot\theta^2.
+T=\frac{1}{2}m\ell^2\dot\theta^2.
 $$
 
 The gravitational potential energy, chosen to be zero at the bottom, is
@@ -259,7 +259,7 @@ $$
 The Lagrangian is
 
 $$
-L=\frac12m\ell^2\dot\theta^2-mg\ell(1-\cos\theta).
+L=\frac{1}{2}m\ell^2\dot\theta^2-mg\ell(1-\cos\theta).
 $$
 
 The two derivatives needed in Lagrange's equation are
@@ -310,8 +310,8 @@ $$
 The string constraint is already built into these expressions. Their speeds have equal magnitude, $|\dot q|$, so the kinetic energy is
 
 $$
-T=\frac12m_1\dot q^2+\frac12m_2\dot q^2
-=\frac12(m_1+m_2)\dot q^2.
+T=\frac{1}{2}m_1\dot q^2+\frac{1}{2}m_2\dot q^2
+=\frac{1}{2}(m_1+m_2)\dot q^2.
 $$
 
 The potential energy is
@@ -324,7 +324,7 @@ $$
 Discarding the irrelevant constant, the Lagrangian is
 
 $$
-L=\frac12(m_1+m_2)\dot q^2-(m_1-m_2)gq.
+L=\frac{1}{2}(m_1+m_2)\dot q^2-(m_1-m_2)gq.
 $$
 
 Lagrange's equation gives
@@ -356,7 +356,7 @@ For the pendulum, keep Cartesian coordinates $(x,y)$ and impose $x^2+y^2=\ell^2$
 
 $$
 \widetilde L
-=\frac12m(\dot x^2+\dot y^2)-mgy
+=\frac{1}{2}m(\dot x^2+\dot y^2)-mgy
 +\frac{\lambda(t)}{2}(x^2+y^2-\ell^2).
 $$
 

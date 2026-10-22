@@ -20,7 +20,7 @@ where $\mathbf R_O$ is the position of the reference point and $Q$ is the body's
 The velocity of a point follows by differentiating. If the reference point is fixed and the angular-velocity bivector is $\boldsymbol\Omega=-2\dot Q\widetilde Q$, then
 
 $$
-\mathbf v=\frac12(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r).
+\mathbf v=\frac{1}{2}(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r).
 $$
 
 For a translating reference point, add $\mathbf V_O$. In three-dimensional vector notation this is the familiar rigid-body formula $\mathbf v=\mathbf V_O+\boldsymbol\omega\times\mathbf r$.
@@ -30,13 +30,13 @@ For a translating reference point, add $\mathbf V_O$. In three-dimensional vecto
 Consider a rigid body made of particles indexed by $a$, with masses $m_a$ and positions $\mathbf r_a$ relative to its centre of mass. Its rotational kinetic energy is
 
 $$
-T_{\mathrm{rot}}=\frac12\sum_a m_a\,\mathbf v_a^2.
+T_{\mathrm{rot}}=\frac{1}{2}\sum_a m_a\,\mathbf v_a^2.
 $$
 
 Using $\mathbf v_a=\boldsymbol\omega\times\mathbf r_a$ gives
 
 $$
-T_{\mathrm{rot}}=\frac12\boldsymbol\omega\cdot\mathsf I\boldsymbol\omega,
+T_{\mathrm{rot}}=\frac{1}{2}\boldsymbol\omega\cdot\mathsf I\boldsymbol\omega,
 $$
 
 where the conventional inertia tensor is
@@ -73,7 +73,7 @@ and it is symmetric. Its diagonal entries in a particular basis are not always e
 The same relation can be written using bivectors. For a point at $\mathbf r$ rotating with angular-velocity bivector $\boldsymbol\Omega$, its velocity relative to the centre is
 
 $$
-\mathbf v=\frac12(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r).
+\mathbf v=\frac{1}{2}(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r).
 $$
 
 Its angular momentum is $\mathbf r\wedge\mathbf v\,dm$. Summing over the body defines a linear map from angular-velocity bivectors to angular-momentum bivectors:
@@ -82,7 +82,7 @@ $$
 \mathcal J=\mathsf I_{\mathrm{GA}}(\boldsymbol\Omega),
 \qquad
 \mathsf I_{\mathrm{GA}}(\boldsymbol\Omega)
-=\int \mathbf r\wedge\frac12(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r)\,dm.
+=\int \mathbf r\wedge\frac{1}{2}(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r)\,dm.
 $$
 
 This is an inertia operator on the three-dimensional space of rotation planes. In 3D, duality turns those bivectors into axial vectors, and this operator is equivalent to the usual inertia tensor. The bivector form keeps the plane of angular momentum visible; the tensor matrix is usually better for numerical calculation and for finding principal axes.
@@ -90,7 +90,7 @@ This is an inertia operator on the three-dimensional space of rotation planes. I
 To check the correspondence for a point mass, consider rotation about $\mathbf e_3$. Set $\boldsymbol\Omega=\omega\mathbf e_1\mathbf e_2$ and write $\mathbf r=x\mathbf e_1+y\mathbf e_2+z\mathbf e_3$. The commutator gives
 
 $$
-\mathbf v=\frac12(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r)
+\mathbf v=\frac{1}{2}(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r)
 =\omega(-y\mathbf e_1+x\mathbf e_2),
 $$
 
@@ -107,8 +107,8 @@ For a body symmetric about the $\mathbf e_3$ axis, the last two terms cancel in 
 The rotational kinetic energy can also be recovered from the pairing of angular momentum and angular velocity:
 
 $$
-T_{\mathrm{rot}}=\frac12\boldsymbol\omega\cdot\mathbf L
-=\frac12\left\langle\widetilde{\mathcal J}\,\boldsymbol\Omega\right\rangle_0.
+T_{\mathrm{rot}}=\frac{1}{2}\boldsymbol\omega\cdot\mathbf L
+=\frac{1}{2}\left\langle\widetilde{\mathcal J}\,\boldsymbol\Omega\right\rangle_0.
 $$
 
 Here $\langle\cdot\rangle_0$ means take the scalar part of a multivector. In the axial-vector representation, the first expression is immediately familiar. The second makes explicit that both rotational quantities can be represented in the same bivector space.
@@ -120,7 +120,7 @@ Because $\mathsf I$ is a real symmetric matrix, it has three mutually perpendicu
 $$
 \mathbf L=I_1\omega_1\mathbf e_1+I_2\omega_2\mathbf e_2+I_3\omega_3\mathbf e_3,
 \qquad
-T_{\mathrm{rot}}=\frac12(I_1\omega_1^2+I_2\omega_2^2+I_3\omega_3^2).
+T_{\mathrm{rot}}=\frac{1}{2}(I_1\omega_1^2+I_2\omega_2^2+I_3\omega_3^2).
 $$
 
 The matrix diagonalization is ordinary linear algebra. GA does not replace it; it gives a basis-independent description of the rotation planes and makes the body-versus-space orientation explicit.

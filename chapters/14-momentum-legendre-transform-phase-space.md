@@ -65,14 +65,14 @@ The state $(q,p)$ is a point in **phase space**. A solution traces a curve throu
 For a mass on a spring,
 
 $$
-L=\frac12m\dot x^2-\frac12kx^2,
+L=\frac{1}{2}m\dot x^2-\frac{1}{2}kx^2,
 \qquad p=\frac{\partial L}{\partial\dot x}=m\dot x.
 $$
 
 Solving for the velocity, $\dot x=p/m$, and forming the Legendre transform gives
 
 $$
-H=p\dot x-L=\frac{p^2}{2m}+\frac12kx^2.
+H=p\dot x-L=\frac{p^2}{2m}+\frac{1}{2}kx^2.
 $$
 
 Hamilton's equations are
@@ -90,7 +90,7 @@ Combining them gives $m\ddot x=-kx$, the same equation obtained from Newton's an
 For a pendulum of length $\ell$ and bob mass $m$, use the angle $\theta$ as the coordinate. Its speed is $\ell\dot\theta$, so
 
 $$
-T=\frac12m\ell^2\dot\theta^2,
+T=\frac{1}{2}m\ell^2\dot\theta^2,
 \qquad U=mg\ell(1-\cos\theta),
 \qquad L=T-U.
 $$

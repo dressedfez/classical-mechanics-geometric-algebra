@@ -146,7 +146,7 @@ This is one vector equation, equivalent to one scalar equation per independent s
 For a particle of constant mass $m$ in a scalar potential $V(\mathbf r)$,
 
 $$
-L=\frac12m\dot{\mathbf r}^{,2}-V(\mathbf r),
+L=\frac{1}{2}m\dot{\mathbf r}^{,2}-V(\mathbf r),
 \qquad
 \dot{\mathbf r}^{,2}=\dot{\mathbf r}\cdot\dot{\mathbf r}.
 $$
@@ -238,9 +238,9 @@ Thus the coordinate equations are the projections of the physical-space equation
 For a mass $m$ attached to an ideal spring, motion is along a fixed unit vector $\mathbf e_1$. Write $\mathbf r=x\mathbf e_1$ and let $x=0$ be the equilibrium position. The potential and Lagrangian are
 
 $$
-V=\frac12kx^2,
+V=\frac{1}{2}kx^2,
 \qquad
-L=\frac12m\dot{\mathbf r}^{,2}-\frac12kx^2.
+L=\frac{1}{2}m\dot{\mathbf r}^{,2}-\frac{1}{2}kx^2.
 $$
 
 The derivatives in vector form are
@@ -301,7 +301,7 @@ $$
 The coordinate Lagrangian and angular generalized momentum are
 
 $$
-\mathcal L=\frac12m\left(\dot r^2+r^2\dot\theta^2\right)-V(r),
+\mathcal L=\frac{1}{2}m\left(\dot r^2+r^2\dot\theta^2\right)-V(r),
 \qquad
 p_\theta=\frac{\partial\mathcal L}{\partial\dot\theta}
 =\mathbf g_\theta\cdot\mathbf p=mr^2\dot\theta.

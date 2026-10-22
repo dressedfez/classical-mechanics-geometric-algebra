@@ -18,7 +18,7 @@ $$
 For sufficiently small $\boldsymbol\eta$, expand the potential energy in a Taylor series. At equilibrium its first derivatives vanish, leaving
 
 $$
-U(q)=U(q_0)+\frac12\boldsymbol\eta^{\mathsf T}K\boldsymbol\eta+\text{higher-order terms},
+U(q)=U(q_0)+\frac{1}{2}\boldsymbol\eta^{\mathsf T}K\boldsymbol\eta+\text{higher-order terms},
 $$
 
 where the **stiffness matrix** is the Hessian
@@ -32,7 +32,7 @@ In components, this expansion is $U(q_0+\eta)=U(q_0)+\sum_i U_i\eta_i+\tfrac12\s
 For small displacements, the kinetic energy can also be evaluated at equilibrium to leading order:
 
 $$
-T=\frac12\dot{\boldsymbol\eta}^{\mathsf T}M\dot{\boldsymbol\eta},
+T=\frac{1}{2}\dot{\boldsymbol\eta}^{\mathsf T}M\dot{\boldsymbol\eta},
 $$
 
 where $M$ is the mass matrix. For simple particle coordinates it may be constant; for curvilinear generalized coordinates it is the kinetic-energy metric from Chapter 11 evaluated at equilibrium.
@@ -88,8 +88,8 @@ Two equal masses $m$ move horizontally. Each is attached to a wall by a spring o
 The potential energy is
 
 $$
-U=\frac12kx_1^2+\frac12k_c(x_2-x_1)^2+\frac12kx_2^2
-=\frac12(k+k_c)x_1^2-k_cx_1x_2+\frac12(k+k_c)x_2^2.
+U=\frac{1}{2}kx_1^2+\frac{1}{2}k_c(x_2-x_1)^2+\frac{1}{2}kx_2^2
+=\frac{1}{2}(k+k_c)x_1^2-k_cx_1x_2+\frac{1}{2}(k+k_c)x_2^2.
 $$
 
 Taking its second derivatives with respect to $x_1,x_2$ gives the stiffness matrix below. The off-diagonal entries are negative because moving one mass in the positive direction pulls the other mass toward it through the connecting spring.
@@ -151,13 +151,13 @@ The normal-mode amplitudes are coordinate columns, not physical vectors in ordin
 Choose mode vectors normalized so that $\mathbf a_i^{\mathsf T}M\mathbf a_j=\delta_{ij}$. Write $\boldsymbol\eta=\sum_i Q_i\mathbf a_i$. The quadratic Lagrangian separates:
 
 $$
-L=\frac12\sum_i\left(\dot Q_i^2-\omega_i^2Q_i^2\right).
+L=\frac{1}{2}\sum_i\left(\dot Q_i^2-\omega_i^2Q_i^2\right).
 $$
 
 Each normal coordinate behaves like an independent oscillator. The total energy is a sum of modal energies,
 
 $$
-E=\frac12\sum_i\left(\dot Q_i^2+\omega_i^2Q_i^2\right).
+E=\frac{1}{2}\sum_i\left(\dot Q_i^2+\omega_i^2Q_i^2\right).
 $$
 
 This decomposition explains why a complicated small motion can be understood by identifying a few basic patterns and their frequencies. If a system is driven near one mode's frequency, the response can be large, just as for the single oscillator in Chapter 6.

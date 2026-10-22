@@ -73,14 +73,14 @@ If a force changes along a path, the work may depend on the path taken. We will 
 The **kinetic energy** of a particle of mass $m$ and speed $v$ is
 
 $$
-K=\frac12 mv^2.
+K=\frac{1}{2} mv^2.
 $$
 
 Kinetic energy is a scalar, even though velocity is a vector. It depends on speed, not direction. The work-energy theorem follows directly from Newton's second law for a particle of constant mass. The chain rule gives
 
 $$
 \frac{dK}{dt}
-=\frac{d}{dt}\left(\frac12m\,\mathbf v\cdot\mathbf v\right)
+=\frac{d}{dt}\left(\frac{1}{2}m\,\mathbf v\cdot\mathbf v\right)
 =m\mathbf v\cdot\frac{d\mathbf v}{dt}
 =m\mathbf v\cdot\mathbf a
 =\mathbf F_{\mathrm{net}}\cdot\mathbf v.
@@ -105,7 +105,7 @@ A particle moves along the $x$ axis under the force $F_x=4.0x\,\mathrm{N}$, with
 
 $$
 W=\int_0^{2.0\,\mathrm{m}}(4.0\,\mathrm{N\,m^{-1}})x\,dx
-=\frac12(4.0\,\mathrm{N\,m^{-1}})(2.0\,\mathrm{m})^2
+=\frac{1}{2}(4.0\,\mathrm{N\,m^{-1}})(2.0\,\mathrm{m})^2
 =8.0\,\mathrm{J}.
 $$
 
@@ -188,7 +188,7 @@ up to the arbitrary additive constant just discussed. Raising an object increase
 For an ideal spring displaced by $x$ from its relaxed position, Hooke's law gives $F_x=-kx$, where $k$ is the spring constant. The corresponding potential energy is
 
 $$
-U_s(x)=\frac12kx^2,
+U_s(x)=\frac{1}{2}kx^2,
 $$
 
 again choosing zero at $x=0$. Compressing or stretching the spring stores energy in the spring-object system. On release, the spring force can transfer that energy to kinetic energy.
@@ -225,7 +225,7 @@ Friction often does negative work on the moving part of a system, reducing its m
 A $0.50\,\mathrm{kg}$ cart is released from rest while a spring of constant $k=200\,\mathrm{N\,m^{-1}}$ is compressed by $0.15\,\mathrm{m}$. Assume a level track and negligible friction. Initially the energy is spring potential energy; as the cart passes the spring's relaxed position, that energy has become kinetic:
 
 $$
-\frac12kx^2=\frac12mv^2.
+\frac{1}{2}kx^2=\frac{1}{2}mv^2.
 $$
 
 Thus,
@@ -287,7 +287,7 @@ Left: a particle with total energy $E$ is confined between turning points where 
 A ball is thrown vertically upward from ground level at $v_0=10.0\,\mathrm{m\,s^{-1}}$. Neglect air resistance and choose $U_g=0$ at the launch point. At the top, the speed is zero, so conservation of mechanical energy gives
 
 $$
-\frac12mv_0^2=mgh_{\max}.
+\frac{1}{2}mv_0^2=mgh_{\max}.
 $$
 
 The mass cancels, leaving
@@ -330,7 +330,7 @@ $$
 7. A $0.80\,\mathrm{kg}$ block slides from rest down a frictionless ramp through a vertical drop of $1.2\,\mathrm{m}$. Find its speed at the bottom. Would the ramp's length affect your answer?
 8. A $1.0\,\mathrm{kg}$ sled starts from rest and descends through $3.0\,\mathrm{m}$ vertically. Friction does $-8.0\,\mathrm{J}$ of work. Find its speed at the bottom and state where the lost mechanical energy has gone in a more complete description.
 9. A ball is thrown upward at $14\,\mathrm{m\,s^{-1}}$. Use an energy diagram or conservation of energy to find its maximum height above the launch point, neglecting air resistance.
-10. Sketch $U(x)=\frac12kx^2$ and draw a total-energy line above its minimum. Mark the turning points and identify where the particle has greatest speed.
+10. Sketch $U(x)=\frac{1}{2}kx^2$ and draw a total-energy line above its minimum. Mark the turning points and identify where the particle has greatest speed.
 11. For each equilibrium shown in {numref}`fig-energy-diagrams`, state whether a small displacement produces a restoring force or drives the particle farther away. Explain using $F_x=-dU/dx$.
 12. In uniform circular motion, the inward net force is perpendicular to the velocity. Use $P=\mathbf F\cdot\mathbf v$ to show that the force does no instantaneous work. Explain how the speed can remain constant while the velocity changes.
 

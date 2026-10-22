@@ -18,7 +18,7 @@ $$
 The small-angle approximation $\sin\theta\approx\theta$ produces simple harmonic motion, but the full equation is nonlinear. Its energy is
 
 $$
-E=\frac12m\ell^2\dot\theta^2+mg\ell(1-\cos\theta).
+E=\frac{1}{2}m\ell^2\dot\theta^2+mg\ell(1-\cos\theta).
 $$
 
 Plotting angular velocity against angle gives a **phase portrait**. Low-energy trajectories are closed curves around the stable hanging equilibrium. At a particular energy, the bob approaches the upright position with its speed tending to zero. This boundary trajectory separates oscillations from full rotations and is called the **separatrix**. Near it, the period grows without bound: the bob spends a long time near the unstable upright position.
@@ -26,7 +26,7 @@ Plotting angular velocity against angle gives a **phase portrait**. Low-energy t
 The threshold follows directly from energy. At the upright position $\theta=\pi$, the potential is $2mg\ell$, so the separatrix has $E_{\mathrm{sep}}=2mg\ell$. At the bottom, where the potential is zero, that same energy is kinetic:
 
 $$
-\frac12m\ell^2\dot\theta^2=2mg\ell,
+\frac{1}{2}m\ell^2\dot\theta^2=2mg\ell,
 \qquad
 |\dot\theta|=2\sqrt{\frac g\ell}.
 $$

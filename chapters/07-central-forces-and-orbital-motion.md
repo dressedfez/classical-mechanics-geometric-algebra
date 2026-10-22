@@ -68,7 +68,7 @@ where $h$ is the **specific angular momentum**, angular momentum per unit mass. 
 In three-dimensional spherical coordinates $(r,\vartheta,\varphi)$, the kinetic energy is
 
 $$
-T=\frac12m\left(\dot r^2+r^2\dot\vartheta^2+r^2\sin^2\vartheta\,\dot\varphi^2\right).
+T=\frac{1}{2}m\left(\dot r^2+r^2\dot\vartheta^2+r^2\sin^2\vartheta\,\dot\varphi^2\right).
 $$
 
 For a central potential $U(r)$, the coordinate Lagrangian is $\mathcal L=T-U(r)$. The azimuth $\varphi$ does not appear in it, so it is cyclic. Its conjugate momentum
@@ -86,7 +86,7 @@ The Euler–Lagrange equation gives $\dot p_\varphi=\partial\mathcal L/\partial\
 In a short time $dt$, the particle sweeps out a small sector whose area, to first order, is the area of a triangle: $dA=\tfrac12r^2d\theta$. Thus the areal velocity is
 
 $$
-\frac{dA}{dt}=\frac12r^2\dot\theta=\frac{L}{2m}.
+\frac{dA}{dt}=\frac{1}{2}r^2\dot\theta=\frac{L}{2m}.
 $$
 
 It is constant. Equal areas are swept out in equal times. This is Kepler's second law, and here it follows directly from zero torque, before specifying the form of the central force.
@@ -108,8 +108,8 @@ $$
 For a conservative force, the same equation follows from the total energy
 
 $$
-E=\frac12m\dot r^2+\frac{L^2}{2mr^2}+U(r)
-=\frac12m\dot r^2+U_{\mathrm{eff}}(r),
+E=\frac{1}{2}m\dot r^2+\frac{L^2}{2mr^2}+U(r)
+=\frac{1}{2}m\dot r^2+U_{\mathrm{eff}}(r),
 $$
 
 where
@@ -242,7 +242,7 @@ $$
 Substitute their time derivatives into $T=\tfrac12m_1\dot{\mathbf r}_1^{\,2}+\tfrac12m_2\dot{\mathbf r}_2^{\,2}$. The cross terms cancel because $m_1(m_2/M)=m_2(m_1/M)$, leaving the kinetic energy as a centre-of-mass part and a relative-motion part:
 
 $$
-T=\frac12M\dot{\mathbf R}^{\,2}+\frac12\mu\dot{\mathbf r}^{\,2}.
+T=\frac{1}{2}M\dot{\mathbf R}^{\,2}+\frac{1}{2}\mu\dot{\mathbf r}^{\,2}.
 $$
 
 If the interaction depends only on the separation $r=|\mathbf r|$, the centre of mass moves uniformly when no external force acts. The relative coordinate behaves like a single particle of mass $\mu$ in the interaction potential. For gravity, write $\kappa=Gm_1m_2$ for the strength of this relative potential:

@@ -218,7 +218,7 @@ Starting from position $y_0$ with vertical velocity $v_{0y}$, constant accelerat
 $$
 v_y(t)=v_{0y}-gt,
 \qquad
-y(t)=y_0+v_{0y}t-\frac12gt^2.
+y(t)=y_0+v_{0y}t-\frac{1}{2}gt^2.
 $$
 
 The mass cancels. In this idealized model, objects of different masses have the same free-fall acceleration when air resistance is negligible. The vector form says that the acceleration points downward; the component equations let us calculate the height and velocity.
@@ -286,7 +286,7 @@ then
 $$
 x(t)=x_0+v_{0x}t,
 \qquad
-y(t)=y_0+v_{0y}t-\frac12gt^2.
+y(t)=y_0+v_{0y}t-\frac{1}{2}gt^2.
 $$
 
 For a launch speed $v_0$ at angle $\theta$ above the horizontal,

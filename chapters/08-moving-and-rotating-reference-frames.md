@@ -36,7 +36,7 @@ $$
 Here $\widetilde R$ is the reverse of $R$. For unit normals, $R\widetilde R=1$. The even multivector $R$ is a **rotor**, and the sandwich $R\mathbf a\widetilde R$ rotates the vector while preserving its length and inner products. In a plane with unit bivector $I$ and $I^2=-1$, a rotation through angle $\theta$ is represented by
 
 $$
-R=\exp\left(-\frac12 I\theta\right)
+R=\exp\left(-\frac{1}{2} I\theta\right)
 =\cos\frac{\theta}{2}-I\sin\frac{\theta}{2},
 \qquad \mathbf a'=R\mathbf a\widetilde R.
 $$
@@ -78,7 +78,7 @@ is a bivector in the fixed frame; it is the angular velocity bivector in our con
 $$
 \dot{\mathbf r}
 =R\dot{\boldsymbol\rho}\widetilde R
-+\frac12(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r).
++\frac{1}{2}(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r).
 $$
 
 The first term is the body's own change of the vector as seen in its frame. The second is the change caused by rotation of the frame. The commutator of a bivector and a vector is a vector, so it has the correct geometric type.
@@ -86,7 +86,7 @@ The first term is the body's own change of the vector as seen in its frame. The 
 In three dimensions write $\boldsymbol\Omega=I_3\boldsymbol\omega$, where $I_3=\mathbf e_1\mathbf e_2\mathbf e_3$ is the unit pseudoscalar and $\boldsymbol\omega$ is the usual angular-velocity vector. Then
 
 $$
-\frac12(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r)
+\frac{1}{2}(\mathbf r\boldsymbol\Omega-\boldsymbol\Omega\mathbf r)
 =\boldsymbol\omega\times\mathbf r.
 $$
 
@@ -194,7 +194,7 @@ The rotor description makes the slow turning of the swing plane explicit. Set
 $$
 \boldsymbol\rho=Q\mathbf q\widetilde Q,
 \qquad
-Q(t)=\exp\left(\frac12 I_h\Omega_s t\right).
+Q(t)=\exp\left(\frac{1}{2} I_h\Omega_s t\right).
 $$
 
 With our convention $\mathbf a'=Q\mathbf a\widetilde Q$, this rotor turns vectors through angle $-\Omega_s t$. Substitution into the pendulum equation gives

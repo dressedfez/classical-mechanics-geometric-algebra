@@ -46,7 +46,7 @@ The extra term can be derived by differentiating the inertial vector directly. W
 
 $$
 \dot{\mathbf L}=Q\dot{\mathbf L}_b\widetilde Q+
-\frac12(\mathbf L\boldsymbol\Omega-\boldsymbol\Omega\mathbf L).
+\frac{1}{2}(\mathbf L\boldsymbol\Omega-\boldsymbol\Omega\mathbf L).
 $$
 
 The commutator term is the vector $\boldsymbol\omega\times\mathbf L$. It accounts for the change of the body axes themselves, so the rotating-frame correction is required even when no physical torque acts.
@@ -72,7 +72,7 @@ With no external torque, both the inertial angular momentum and rotational kinet
 $$
 \mathbf L^2=\text{constant},
 \qquad
-T=\frac12(I_1\omega_1^2+I_2\omega_2^2+I_3\omega_3^2)=\text{constant}.
+T=\frac{1}{2}(I_1\omega_1^2+I_2\omega_2^2+I_3\omega_3^2)=\text{constant}.
 $$
 
 Suppose $I_1<I_2<I_3$. Consider steady rotation about the second principal axis, $\omega_2=\Omega$ and $\omega_1=\omega_3=0$. To test its stability, add small components $\delta\omega_1$ and $\delta\omega_3$. Linearizing Euler's equations yields

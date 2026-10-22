@@ -128,13 +128,13 @@ $$
 The positive sign means that the joined carts move to the right. Their initial kinetic energy is
 
 $$
-K_i=\frac12(2.0)(3.0)^2+\frac12(1.0)(1.0)^2=9.5\,\mathrm J,
+K_i=\frac{1}{2}(2.0)(3.0)^2+\frac{1}{2}(1.0)(1.0)^2=9.5\,\mathrm J,
 $$
 
 whereas their final kinetic energy is
 
 $$
-K_f=\frac12(3.0)\left(\frac53\right)^2\,\mathrm J\approx4.2\,\mathrm J.
+K_f=\frac{1}{2}(3.0)\left(\frac{5}{3}\right)^2\,\mathrm J\approx4.2\,\mathrm J.
 $$
 
 The missing kinetic energy has not vanished. It has become internal energy, sound, and deformation. This is why momentum conservation applies to the collision while kinetic energy conservation does not.

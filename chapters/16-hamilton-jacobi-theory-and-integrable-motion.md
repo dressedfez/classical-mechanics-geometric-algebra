@@ -42,13 +42,13 @@ The function $W$ is called Hamilton's characteristic function. In one dimension 
 For $H=p^2/(2m)+kx^2/2$, the characteristic equation is
 
 $$
-\frac{1}{2m}\left(\frac{dW}{dx}\right)^2+\frac12kx^2=E.
+\frac{1}{2m}\left(\frac{dW}{dx}\right)^2+\frac{1}{2}kx^2=E.
 $$
 
 Thus
 
 $$
-p=\frac{dW}{dx}=\pm\sqrt{2m(E-\frac12kx^2)}.
+p=\frac{dW}{dx}=\pm\sqrt{2m(E-\frac{1}{2}kx^2)}.
 $$
 
 Let $\omega=\sqrt{k/m}$ and $A=\sqrt{2E/k}$. On the branch with positive momentum, $p=m\omega\sqrt{A^2-x^2}$, so one convenient integral is

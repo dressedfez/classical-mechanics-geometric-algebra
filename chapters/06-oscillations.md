@@ -108,15 +108,15 @@ The amplitude is therefore determined by the oscillator's initial state, not jus
 The spring's potential energy, measured relative to equilibrium, is $U=\tfrac12kx^2$. The mass's kinetic energy is $K=\tfrac12mv^2$. For the ideal oscillator, their sum is constant:
 
 $$
-E=K+U=\frac12mv^2+\frac12kx^2.
+E=K+U=\frac{1}{2}mv^2+\frac{1}{2}kx^2.
 $$
 
 At a turning point, the energy is entirely spring potential energy; at equilibrium, it is entirely kinetic energy. At intermediate positions, it is shared. Substituting the expressions for $x(t)$ and $v(t)$ shows the conservation directly:
 
 $$
-E=\frac12mA^2\omega_0^2\sin^2(\omega_0t+\phi)
-+\frac12kA^2\cos^2(\omega_0t+\phi)
-=\frac12kA^2,
+E=\frac{1}{2}mA^2\omega_0^2\sin^2(\omega_0t+\phi)
++\frac{1}{2}kA^2\cos^2(\omega_0t+\phi)
+=\frac{1}{2}kA^2,
 $$
 
 because $k=m\omega_0^2$ and $\sin^2\theta+\cos^2\theta=1$. This is the energy method from Chapter 4 applied to a repeating motion.
@@ -174,7 +174,7 @@ $$
 the ideal oscillator's state moves around a circle of radius $A$ in this plane. The conserved energy can also be read from that radius:
 
 $$
-E=\frac12m\omega_0^2\mathbf q^2.
+E=\frac{1}{2}m\omega_0^2\mathbf q^2.
 $$
 
 The three descriptions emphasize different things. The real equation gives the physical displacement directly. A complex number makes sinusoidal phase calculations compact. The GA state vector shows that phase evolution is a rotation in a plane and connects its magnitude to energy. For a one-dimensional spring calculation, the real equation is normally quickest; the GA representation is useful when we want to understand the geometry of phase or connect oscillations with rotations.
