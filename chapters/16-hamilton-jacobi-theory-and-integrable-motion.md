@@ -55,7 +55,7 @@ Let $\omega=\sqrt{k/m}$ and $A=\sqrt{2E/k}$. On the branch with positive momentu
 
 $$
 W(x;E)=\int_0^x p(x';E)\,dx'
-=\frac{m\omega}{2}\left[x\sqrt{A^2-x^2}+A^2\arcsin\left(\frac{x}{A}\right)\right].
+=\frac{m\omega}{2}\left[x\sqrt{A^2-x^2}+A^2\arcsin(\frac{x}{A})\right].
 $$
 
 The turning points are $x=\pm A$, where $p=0$; the negative-momentum branch has the opposite sign for $dW/dx$. To recover the time, differentiate the integral with respect to its parameter $E$ while holding $x$ fixed:
