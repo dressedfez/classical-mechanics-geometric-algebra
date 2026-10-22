@@ -48,7 +48,7 @@ $$
 Thus
 
 $$
-p=\frac{dW}{dx}=\pm\sqrt{2m\left(E-\frac12kx^2\right)}.
+p=\frac{dW}{dx}=\pm\sqrt{2m(E-\frac12kx^2)}.
 $$
 
 Let $\omega=\sqrt{k/m}$ and $A=\sqrt{2E/k}$. On the branch with positive momentum, $p=m\omega\sqrt{A^2-x^2}$, so one convenient integral is
