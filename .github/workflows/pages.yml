@@ -41,6 +41,8 @@ jobs:
 
       - name: Set up Typst
         uses: typst-community/setup-typst@v5
+        with:
+          typst-version: 0.14.2
 
       - name: Build the book PDF
         run: myst --debug build --pdf
