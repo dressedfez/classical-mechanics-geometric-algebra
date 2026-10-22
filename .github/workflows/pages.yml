@@ -52,6 +52,19 @@ jobs:
         if: failure()
         run: |
           mkdir -p _build/exports
+          python3 - <<'PY'
+          import pathlib
+          import subprocess
+
+          root = pathlib.Path(subprocess.check_output(["npm", "root", "-g"], text=True).strip())
+          bundle = root / "mystmd/dist/myst.cjs"
+          source = bundle.read_text()
+          needle = "const right2 = ((_a2 = args === null || args === void 0 ? void 0 : args[0].content) === null || _a2 === void 0 ? void 0 : _a2[0]).content;"
+          replacement = 'const right2 = args?.[0]?.content?.[0]?.content; if (right2 === undefined) console.error("MYST MISSING RIGHT DELIMITER", JSON.stringify(node3));'
+          if needle not in source:
+              raise SystemExit("Could not find MyST Typst delimiter handler to instrument")
+          bundle.write_text(source.replace(needle, replacement, 1))
+          PY
           cat > myst-diagnostic-first.yml <<'YAML'
           version: 1
           project:
