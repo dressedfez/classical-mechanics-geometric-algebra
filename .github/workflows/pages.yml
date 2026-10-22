@@ -43,15 +43,15 @@ jobs:
         uses: typst-community/setup-typst@v5
 
       - name: Build the book PDF
-        run: myst build --typst
+        run: myst build --pdf
+
+      - name: Verify the book PDF
+        run: test -s _build/exports/classical-mechanics-with-geometric-algebra.pdf
 
       - name: Build the static website
         run: myst build --html
         env:
           BASE_URL: ${{ steps.pages.outputs.base_path }}
-
-      - name: Add the PDF to the published website
-        run: cp _build/exports/classical-mechanics-with-geometric-algebra.pdf _build/html/classical-mechanics-with-geometric-algebra.pdf
 
       - name: Upload the website for deployment
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.publish) }}

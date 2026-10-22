@@ -6,7 +6,7 @@ project:
   description: An introductory mechanics book that uses geometric algebra where it clarifies the geometry and compares it with conventional methods.
   exports:
     - id: full-book-pdf
-      format: typst
+      format: pdf
       template: ./templates/plain_typst_book
       output: _build/exports/classical-mechanics-with-geometric-algebra.pdf
       articles:
